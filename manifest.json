@@ -1,0 +1,11 @@
+{
+	"id": "auto-tags",
+	"name": "Auto tags",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Implements tags to a given folder, so whenever you add a file to that folder, the file will get that specific tag.",
+	"author": "thisisozy",
+	"authorUrl": "https://github.com/thisisozy",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}

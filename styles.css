@@ -1,0 +1,23 @@
+.confirmation-modal-warningDIV {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.confirmation-modal-buttonsDIV {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+.confirmation-modal-button-deny {
+  position: absolute;
+  left: 3rem;
+}
+
+.confirmation-modal-button-confirm {
+  position: absolute;
+  right: 3rem;
+}
