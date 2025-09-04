@@ -1,6 +1,6 @@
 ### AutoTags
 
-**AutoTags** is an Obsidian plugin that automatically manages frontmatter tags based on the folder a note lives in. No more manual tag wrangling—just drop your files where they belong, and AutoTags keeps their metadata tidy.
+**AutoTags** is an Obsidian plugin that automatically manages frontmatter tags based on the folder a note lives in. No more manual tag wrangling — just drop your files where they belong, and AutoTags keeps their metadata tidy.
 
 ---
 
@@ -41,7 +41,7 @@
 
 #### Easy way (recommended)
 
-1. Download the `AutoTags.zip` from the latest [release](https://github.com/thisisozy/auto-tags/releases).
+1. Download the `AutoTags.zip` from the latest [release](https://github.com/thisisozy/obsidian-auto-tags/releases).
 
 2. Unzip it into your vault’s `.obsidian/plugins/` folder. This should create a folder with `main.js`, `manifest.json`, and `styles.css` inside.
 
@@ -53,7 +53,7 @@
 
 2. Create a new folder called `auto-tags`.
 
-3. Download `main.js`, `manifest.json`, and `styles.css` individually from the latest [release](https://github.com/thisisozy/auto-tags/releases) and put them in that folder.
+3. Download `main.js`, `manifest.json`, and `styles.css` individually from the latest [release](https://github.com/thisisozy/obsidian-auto-tags/releases) and put them in that folder.
 
 4. Enable `AutoTags` in Obsidian settings.
 
@@ -79,7 +79,7 @@
 ---
 
 ### Feedback
-Found a bug? Got an idea? Open an [issue](https://github.com/thisisozy/auto-tags/issues) or contribute a [pull request](https://github.com/thisisozy/auto-tags/pulls).
+Found a bug? Got an idea? Open an [issue](https://github.com/thisisozy/obsidian-auto-tags/issues) or contribute a [pull request](https://github.com/thisisozy/obsidian-auto-tags/pulls).
 
 ---
 
