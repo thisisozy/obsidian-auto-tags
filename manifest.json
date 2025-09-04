@@ -1,11 +1,11 @@
 {
 	"id": "auto-tags",
-	"name": "Auto tags",
+	"name": "AutoTags",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Implements tags to a given folder, so whenever you add a file to that folder, the file will get that specific tag.",
+	"description": "Automatically manage frontmatter tags based on the folder a note lives in.",
 	"author": "thisisozy",
 	"authorUrl": "https://github.com/thisisozy",
 	"fundingUrl": "",
-	"isDesktopOnly": false
+	"isDesktopOnly": true
 }
