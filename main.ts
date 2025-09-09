@@ -181,7 +181,9 @@ export default class AutoTags extends Plugin {
 	// adds or removes tags on all files under a folder
 	async updateTagsOnAllFilesUnderAFolder(folder: TFolder, tags: string[], recursive: boolean, mode: "add" | "remove") {
 		this.app.vault.getAllLoadedFiles().forEach(async (file) => {
-			if (file instanceof TFile && ((file.path.startsWith(folder.path) && recursive) || file.path === `${folder.path}/${file.name}`)) {
+			if (file instanceof TFile &&
+				((file.path.startsWith(folder.path) && recursive) ||
+				file.path === `${folder.path}/${file.name}`)) {
 				for (let i in tags){
 					if (mode === "add") {
 						await this.addTagToFile(file, tags[i]);
@@ -195,6 +197,8 @@ export default class AutoTags extends Plugin {
 
 	// add a tag to a file through a front matter object
 	async addTagToFile(file: TFile, tag: string) {
+		if(file.extension !== 'md') return;
+
 		const content = await this.app.vault.read(file);
 		let newContent: string;
 
@@ -204,7 +208,9 @@ export default class AutoTags extends Plugin {
 			let frontMatterObj = await this.getFMOFromFile(file);
 
 			if(!frontMatterObj) return;
+
 			if(!Array.isArray(frontMatterObj.tags)) frontMatterObj.tags = [];
+
 			if(!frontMatterObj.tags.includes(tag)) {
 				frontMatterObj.tags.push(tag);
 			} else return;
@@ -217,6 +223,8 @@ export default class AutoTags extends Plugin {
 
 	// remove a tag from a file through a front matter object
 	async removeTagFromFile(file: TFile, tag: string) {
+		if(file.extension !== 'md') return;
+
 		const content = await this.app.vault.read(file);
 		let newContent: string;
 
